@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "build": "tsc --noEmit && esbuild main.ts --bundle --outfile=pub/main.js",
+    "watch": "nodemon --ignore \"./pub/main.js\" --exec \"npm run build\" --ext ts,html,vert,frag"
+  },
+  "dependencies": {
+    "@types/seedrandom": "^3.0.1",
+    "seedrandom": "^3.0.5"
+  }
+}
